@@ -1,0 +1,12 @@
+- hosts: all
+  connection: local
+  roles:
+    - role: takahashi.calc.clear
+
+    - role: takahashi.calc.add
+      vars:
+        value: 10
+
+  tasks:
+    - name: Add 10
+      takahashi.calc.command:
