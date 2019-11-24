@@ -1,0 +1,12 @@
+- hosts: all
+  connection: local
+  roles:
+    - role: ac_sample.calc.clear
+
+    - role: ac_sample.calc.add
+      vars:
+        value: 100
+
+    - role: ac_sample.calc.add
+      vars:
+        value: 200

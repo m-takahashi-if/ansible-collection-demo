@@ -1,0 +1,14 @@
+- hosts: all
+  connection: local
+  tasks:
+    - name: Clear
+      ac_sample.calc.publish_request:
+        command: clear
+
+    - name: Add 10
+      ac_sample.calc.publish_request:
+        value: 10
+
+    - name: Add 20
+      ac_sample.calc.publish_request:
+        value: 20
